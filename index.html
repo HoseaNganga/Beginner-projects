@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Hosea Nganga">
-    <meta name="description" content="This is a tribute page on Hedy Lamarr an actress and inventor">
-    <link rel="stylesheet" href="main.css">
-    <title>Hedy Lamarr</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Hosea Nganga">
+  <meta name="description" content="This is a survey form for the user to provide the relevant information">
+  <link rel="stylesheet" href="main.css">
+  <title>Survey Form</title>
+
 </head>
 <body>
-    <header>
-        <h1>
-            Hedy Lammar
-        </h1>
-        <p>
-            Actress and Inventor
-        </p>
-    </header>
-    <div>
-        <img src="images/hedy.jpg" alt="Hedy Lammar iamge" width="220" height="303">
-        <p>
-            We can say without a semblance of doubt that she was a woman who had an interseting life.She was curious,intelligent and talented.She travelled and changed residence many times from a young age.She was the first to do many things on a big screen where films were still made in black and white:She was a star.But she also had a great and resourceful mind that made her learn everything availbale around her; she did experiments and made inventions.One of that is still present in our today lives.
-            <br>Some facts about her:
-            <ul>
-                <li>
-                    She was a film star from 1930<sup>s</s></sup> to 1950<sup>s</sup>
-                </li>
-                <li>
-                    Hedy was often known as the "most beautiful woman in films."
-                </li>
-                <li>
-                    During <abbr title="World War 2">WW2</abbr> along with George Anthiel(pianist,author and inventor) developed a radio guidance system the same which is currently incoroporated in wifi,CDMA and Bluetooth.
-                </li>
-                <li>
-                    The <abbr title="United States Of America">USA</abbr> didnt adopt the technology at the time until much later in 1962 but the patent had already expired.
-                </li>
-                <li>
-                    She became a United States citizen in 1953.
-                </li>
-                <li>
-                    She was married and divorced 6 times.
-                </li>
-                <li>
-                    She died in the US in 2000.
-                </li>
-            </ul>
-        </p>
-    </div>
-    <br>
-    <footer>
-        <p>
-            For more information on Hedy Lamarr, see her <a href="https://en.wikipedia.org/wiki/Hedy_Lamarr#:~:text=Hedy%20Lamarr%20(%2F%CB%88h%C9%9B,movie%20actresses%20of%20all%20time." target="_blank">Wikipedia Page</a>
-        </p>
-    </footer>
-    
-</body>
+  <article>
+    <h2>
+      Survey Form
+    </h2>
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+         <p>
+          <label for="name">First Name:</label>
+          <input type="text" id="name" placeholder="John" autocomplete="on" required>
+         </p>
+         <p>
+          <label for="name">Last Name:</label>
+          <input type="text" id="name" placeholder="Smith" autocomplete="on" required>
+         </p>
+         <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="name@domain.org" autocomplete="on" required>
+         </p>
+         <p>
+          <label for="tel">Tel:</label>
+          <input type="tel" id="tel" placeholder="0712456789">
+         </p>
+         <p>
+          <label for="birthyear">Year of Birth:</label>
+          <input type="number" id="birthyear" min="1923" max="2023" step="10" value="1923">
+         </p>
+         <p>
+          <label for="age">Age:</label>
+          <input type="agenumber" id="age" min="18" max="100" step="10" value="18">
+         </p>
+         <p class="option">
+          Which option best describes you?
+          <br>
+          <select>
+            <option>Student</option>
+            <option>Working Class</option>
+            <option>Senior Citizen</option>
+          </select>
+         </p>
+         <p class="radio">
+          Would you recommend this survey form to others?
+          <br>
+          <input type="radio" id="recommendation" name="answer">
+          <label for="recommendation">Yes</label>
+          <br>
+          <input type="radio" id="recommendation" name="answer">
+          <label for="recommendation">No</label>
+          <br>
+          <input type="radio" id="recommendation" name="answer">
+          <label for="recommendation">Maybe</label>
+         </p>
+         <p>
+          Languages and Frameworks Known(check all that apply):
+          <br>
+          <input type="checkbox" id="language">
+          <label for="language">C</label>
+          <br>
+          <input type="checkbox" id="language">
+          <label for="language">C++</label>
+          <br>
+          <input type="checkbox" id="language">
+          <label for="language">C#</label>
+          <br>
+          <input type="checkbox" id="language">
+          <label for="language">Python</label>
+          <br>
+          <input type="checkbox" id="language">
+          <label for="language">Java Script</label>
+          <br>
+          <input type="checkbox" id="language">
+          <label for="language">React</label>
+          <br>
+          <input type="checkbox" id="language">
+          <label for="language">Angular</label>
+          <br>
+          <input type="checkbox" id="language">
+          <label for="language">Django</label>
+         </p>
+        
 
+      </fieldset>
+
+    </form>
+  </article>
+  <br>
+  <footer>
+    <form action="https://httpbin.org/get" method="get">
+      <fieldset>
+        <legend>We would love to hear from you</legend>
+        <p>
+          <label for="comment">Comment Here:</label>
+          <br>
+          <textarea id="comment" placeholder="Leave your Comment Here" cols="30" rows="10"></textarea>
+          <br><br>
+          <button value="send">Send</button>
+          <button value="Reset">Reset</button>
+          <br><br>
+          <a href="#">Back to Top</a>
+        </p>
+      </fieldset>
+    </form>
+  </footer>
+  
+</body>
 </html>

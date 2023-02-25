@@ -1,37 +1,68 @@
 body{
-    background-color: #d3d3d3;
-    font-family:'Courier New', Courier, monospace;
-
+    background-color: yellowgreen ;
+    font-family:Arial, Helvetica, sans-serif;
 }
-header{
+h2{
     text-align: center;
-    padding: 20px;
-    border-bottom: 5px solid #c79292;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 10px;
 }
-h1{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    margin: 0px;
-    padding-bottom: 10px;
+legend{
+    font-weight: bolder;
 }
-header p{
-    margin-top: -3px;
-    font-size:x-large;
+input[type="text"]{
+    padding: 8px;
 }
-img{
-    float: left;
+input[type="email"]{
+    padding: 8px;
+    margin-left: 35px;
 }
-div p{
-    margin-left: 250px;
+input[type="tel"]{
+    padding: 8px;
+    margin-left: 55px;
 }
-ul{
-    margin-left: 225px;
-    line-height: 23px;
+label[for="birthyear"]{
+    margin-left: -8px;
 }
-footer a{
-    text-decoration: none;
-    color:black;
+input[type="number"]{
+    padding: 8px;
+    margin-left: -5px;
 }
-footer a:hover{
-    color:blue;
+input[type="agenumber"]{
+    margin-left: 45px;
+    padding:8px;
+}
+.option{
+    margin-top: 60px;
+}
+select{
+    padding: 10px;px;
+}
+.radio{
+    margin-top: 30px;
+}
+input[type="radio"]{
+    padding: 160px;
+}
+textarea{
+    padding: 18px;
+}
+button[value="send"]{
+    border: 1px solid green;
+    border-radius: 50%;
+    padding: 10px;
+    color:blueviolet;
+}
+button[value="send"]:hover{
+    color: purple;
+}
+button[value="Reset"]{
+    border: 1px solid green;
+    border-radius: 50%;
+    padding: 10px;
+    color:blueviolet
+}
+button[value="Reset"]{
+    color:purple;
 }
